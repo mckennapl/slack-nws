@@ -11,13 +11,13 @@ forecast = json.loads(response.text)
 # Find time of day
 def get_part_of_day(hour):
     return (
-        ":sunflower: Good morning! :sunflower:" if 3 <= hour <= 11
+        ":sunflower: *Good morning!* :sunflower:" if 3 <= hour <= 11
         else
-        ":sunny: Good afternoon! :sunny:" if 12 <= hour <= 17
+        ":sunny: *Good afternoon!* :sunny:" if 12 <= hour <= 17
         else
-        ":city_sunset: Good evening! :city_sunset:" if 18 <= hour <= 22
+        ":city_sunset: *Good evening!* :city_sunset:" if 18 <= hour <= 22
         else
-        ":moon: Good night! :moon:"
+        ":moon: *Good night!* :moon:"
     )
 
 time_of_day = datetime.now().hour
