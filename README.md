@@ -1,5 +1,7 @@
 # slack-nws
 
+![Weather Boi in Action](https://i.imgur.com/DFnd0tE.png)
+
 Python script to capture the short and the detailed NWS forecasts from their API and then post to a Slack channel.
 
 You'll need to have Incoming Webhooks set up on your Slack: https://api.slack.com/messaging/webhooks
