@@ -1,6 +1,6 @@
 # slack-nws
 
-![Weather Boi in Action](https://i.imgur.com/DFnd0tE.png)
+![Weather Boi in Action](https://i.imgur.com/JeZaqwY.png)
 
 Python script to capture the short and the detailed NWS forecasts from their API and then post to a Slack channel.
 
