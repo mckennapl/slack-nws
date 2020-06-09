@@ -16,5 +16,5 @@ loc = "https://api.weather.gov/gridpoints/{office}/{grid_x},{grid_y}/forecast/" 
 
 ## To-dos
 
-* Make the output prettier
+* ~Make the output prettier~
 * Create alerting for NWS alerts
