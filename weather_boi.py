@@ -11,13 +11,13 @@ forecast = json.loads(response.text)
 # Find time of day
 def get_part_of_day(hour):
     return (
-        "morning" if 3 <= hour <= 11
+        ":sunflower: Good morning! :sunflower:" if 3 <= hour <= 11
         else
-        "afternoon" if 12 <= hour <= 17
+        ":sunny: Good afternoon! :sunny:" if 12 <= hour <= 17
         else
-        "evening" if 18 <= hour <= 22
+        ":city_sunset: Good evening! :city_sunset:" if 18 <= hour <= 22
         else
-        "night"
+        ":moon: Good night! :moon:"
     )
 
 time_of_day = datetime.now().hour
@@ -31,7 +31,7 @@ fc_future_short =forecast["properties"]["periods"][1]["shortForecast"]
 fc_future_detailed = forecast["properties"]["periods"][1]["detailedForecast"]
 
 # The forecast
-fc_whole_now = {"text": "Good {0}!\n".format(get_part_of_day(time_of_day)) + "\n\n Today's forecast calls for " + fc_forecast_short.lower() + ".\n" + fc_forecast_detailed + "\n\nLater on " + fc_future_time.lower() + " will bring " + fc_future_short.lower() + ".\n" + fc_future_detailed}
+fc_whole_now = {"text": get_part_of_day(time_of_day) + "\n\n *Today's forecast calls for " + fc_forecast_short.lower() + ".* \n>" + fc_forecast_detailed + "\n\n\n*Later on " + fc_future_time.lower() + " will bring " + fc_future_short.lower() + ".* \n>" + fc_future_detailed}
 
 # Create post
 fc_0_time = requests.post(webhook_url, json = fc_whole_now)
