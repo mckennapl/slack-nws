@@ -17,4 +17,5 @@ loc = "https://api.weather.gov/gridpoints/{office}/{grid_x},{grid_y}/forecast/" 
 ## To-dos
 
 * ~Make the output prettier~
+* Add dynamic emojis based on weather
 * Create alerting for NWS alerts
