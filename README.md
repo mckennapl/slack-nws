@@ -1,8 +1,10 @@
 # slack-nws
 
-Python script to capture the short and the detailed NWS forecasts from their API and then post those to a Slack team and channel of your choosing.
+Python script to capture the short and the detailed NWS forecasts from their API and then post to a Slack channel.
 
-Needs a weather_webhook.py file with your location and webhook URL:
+You'll need to have Incoming Webhooks set up on your Slack: https://api.slack.com/messaging/webhooks
+
+Create a weather_webhook.py (in .gitignore) file with your location and webhook URL:
 
 ### weather_webhook.py
 ```
@@ -12,5 +14,5 @@ loc = "https://api.weather.gov/gridpoints/{office}/{grid_x},{grid_y}/forecast/" 
 
 ## To-dos
 
-* Format the output so it's not so ugly and wall-of-text-ish
+* Make the output prettier
 * Create alerting for NWS alerts
