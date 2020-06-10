@@ -22,3 +22,4 @@ As the comment says you'll also need to check the examples tab on https://www.we
 * ~Make the output prettier~
 * Add dynamic emojis based on weather
 * Create alerting for NWS alerts
+* Sync NWS forecast changes with get_part_of_day def
