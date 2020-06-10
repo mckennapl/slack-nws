@@ -8,7 +8,7 @@ You'll need to have Incoming Webhooks set up on your Slack: https://api.slack.co
 
 ## Usage
 
-Create a weather_webhook.py file with your location and webhook URL:
+Create a weather_webhook.py file in the slack-nws directory with your NWS location data and Slack incoming webhook URL:
 
 ### weather_webhook.py
 ```
