@@ -31,7 +31,7 @@ fc_future_short =forecast["properties"]["periods"][1]["shortForecast"]
 fc_future_detailed = forecast["properties"]["periods"][1]["detailedForecast"]
 
 # The forecast
-fc_whole_now = {"text": get_part_of_day(time_of_day) + "\n\n\n\n *Currently:* " + fc_forecast_short + ". \n>" + fc_forecast_detailed + "\n\n\n\n*" + fc_future_time + ":* " + fc_future_short + ". \n>" + fc_future_detailed}
+fc_whole_now = {"text": get_part_of_day(time_of_day) + "\n\n *Currently:* " + fc_forecast_short + ". \n>" + fc_forecast_detailed + "\n\n*" + fc_future_time + ":* " + fc_future_short + ". \n>" + fc_future_detailed}
 
 # Create post
 fc_0_time = requests.post(webhook_url, json = fc_whole_now)
